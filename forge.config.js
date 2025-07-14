@@ -3,6 +3,7 @@ const { FuseV1Options, FuseVersion } = require("@electron/fuses");
 
 module.exports = {
   packagerConfig: {
+    name:"PreHarnessPro",
     asar: true,
   },
   rebuildConfig: {},
@@ -46,7 +47,7 @@ module.exports = {
             },
           ],
           devServer: {
-            port: 3001,
+            port: 3000,
             hot: true, // ← これが有効か？
             liveReload: true, // ← これも有効か？
           },
